@@ -97,32 +97,32 @@ export const whyChooseUs = [
   {
     title: 'Industry Experience',
     description: '25+ years of excellence in gasket manufacturing and sealing solutions',
-    icon: '👑'
+    icon: 'Crown'
   },
   {
     title: 'Quality Assurance',
     description: 'ISO certified manufacturing with rigorous quality control standards',
-    icon: '✓'
+    icon: 'Check'
   },
   {
     title: 'Fast Delivery',
     description: 'Quick turnaround times with reliable and secure logistics',
-    icon: '🚚'
+    icon: 'Truck'
   },
   {
     title: 'Custom Solutions',
     description: 'Tailored gaskets designed for your specific industrial needs',
-    icon: '⚙️'
+    icon: 'Settings'
   },
   {
     title: '24/7 Support',
     description: 'Dedicated customer service team ready to assist anytime',
-    icon: '📞'
+    icon: 'Phone'
   },
   {
     title: 'Competitive Pricing',
     description: 'Premium quality products at competitive market prices',
-    icon: '💰'
+    icon: 'DollarSign'
   }
 ]
 

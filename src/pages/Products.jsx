@@ -1,16 +1,10 @@
-import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import ProductCard from '../components/ProductCard'
 import { products } from '../data/products'
 
 const Products = () => {
-  const [selectedCategory, setSelectedCategory] = useState('All')
-
-  const filteredProducts = products.filter(product => {
-    const matchesCategory = selectedCategory === 'All' || product.category === selectedCategory
-    return matchesCategory
-  })
+  const filteredProducts = products
 
   return (
     <div>
@@ -52,15 +46,7 @@ const Products = () => {
               transition={{ duration: 0.6 }}
               className="text-center py-12"
             >
-              <p className="text-gray-600 text-lg">No products found matching your search.</p>
-              <button
-                onClick={() => {
-                  setSelectedCategory('All')
-                }}
-                className="mt-4 btn-primary"
-              >
-                Clear Filters
-              </button>
+              <p className="text-gray-600 text-lg">No products found.</p>
             </motion.div>
           )}
         </div>

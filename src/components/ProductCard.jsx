@@ -6,9 +6,10 @@ const ProductCard = ({ product, index }) => {
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
+      whileHover={{ y: -10, boxShadow: "0 20px 40px rgba(0, 0, 0, 0.15)" }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
       viewport={{ once: true }}
-      className="card-hover bg-white rounded-lg overflow-hidden shadow-elegant"
+      className="card-hover bg-white rounded-lg overflow-hidden shadow-elegant transition-shadow duration-300"
     >
       {/* Image Container */}
       <div className="relative h-48 overflow-hidden bg-gray-200">

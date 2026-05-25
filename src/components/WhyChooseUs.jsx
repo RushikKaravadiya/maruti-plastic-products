@@ -1,5 +1,15 @@
 import { motion } from 'framer-motion'
+import { Crown, Check, Truck, Settings, Phone, DollarSign } from 'lucide-react'
 import { whyChooseUs } from '../data/products'
+
+const iconMap = {
+  Crown,
+  Check,
+  Truck,
+  Settings,
+  Phone,
+  DollarSign
+}
 
 const WhyChooseUs = () => {
   const containerVariants = {
@@ -44,21 +54,26 @@ const WhyChooseUs = () => {
           viewport={{ once: true }}
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
-          {whyChooseUs.map((feature) => (
-            <motion.div
-              key={feature.title}
-              variants={itemVariants}
-              className="card-hover bg-light-gray rounded-lg p-6 text-center hover:bg-accent-orange/5 transition-colors"
-            >
-              <div className="text-6xl mb-4">{feature.icon}</div>
-              <h3 className="text-xl font-bold text-dark-blue mb-3">
-                {feature.title}
-              </h3>
-              <p className="text-gray-600">
-                {feature.description}
-              </p>
-            </motion.div>
-          ))}
+          {whyChooseUs.map((feature) => {
+            const IconComponent = iconMap[feature.icon]
+            return (
+              <motion.div
+                key={feature.title}
+                variants={itemVariants}
+                className="card-hover bg-light-gray rounded-lg p-6 text-center hover:bg-accent-orange/5 transition-colors"
+              >
+                <div className="flex justify-center mb-4">
+                  {IconComponent && <IconComponent size={48} className="text-accent-orange" />}
+                </div>
+                <h3 className="text-xl font-bold text-dark-blue mb-3">
+                  {feature.title}
+                </h3>
+                <p className="text-gray-600">
+                  {feature.description}
+                </p>
+              </motion.div>
+            )
+          })}
         </motion.div>
       </div>
     </section>
