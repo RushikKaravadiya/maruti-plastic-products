@@ -34,7 +34,7 @@ const ContactCTA = () => {
               <Phone size={40} className="text-accent-orange" />
             </div>
             <h3 className="font-bold text-lg mb-2">Phone</h3>
-            <p className="text-gray-300">+91 92652 02308</p>
+            <p className="text-gray-300">+91-92652 02308 | +91-97145 86233</p>
             <p className="text-gray-400 text-sm">Mon-Sun 9AM-9PM IST</p>
           </motion.div>
 
@@ -79,7 +79,7 @@ const ContactCTA = () => {
           viewport={{ once: true }}
           className="flex flex-col sm:flex-row gap-4 justify-center"
         >
-          <button className="btn-primary">Send Inquiry</button>
+          {/* <button className="btn-primary">Send Inquiry</button> */}
           <a
             href="https://wa.me/91XXXXXXXXXX"
             target="_blank"

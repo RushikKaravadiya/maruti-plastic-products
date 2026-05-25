@@ -48,7 +48,7 @@ const Introduction = () => {
           {/* Image */}
           <motion.div variants={itemVariants} className="order-2 md:order-1">
             <img
-              src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=500&h=400&fit=crop"
+              src="/photo2.png"
               alt="Manufacturing"
               className="w-full rounded-lg shadow-elegant"
             />

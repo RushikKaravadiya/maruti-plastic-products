@@ -17,9 +17,6 @@ const ProductCard = ({ product, index }) => {
           alt={product.name}
           className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
         />
-        <div className="absolute top-4 right-4 bg-accent-orange text-white px-3 py-1 rounded-full text-sm font-semibold">
-          {product.category}
-        </div>
       </div>
 
       {/* Content */}

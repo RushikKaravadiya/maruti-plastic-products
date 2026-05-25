@@ -2,7 +2,6 @@ export const products = [
   {
     id: 1,
     name: 'Oil Sealing Gaskets',
-    category: 'Sealing Solutions',
     shortDescription: 'Premium oil resistance gaskets for industrial machinery',
     image: '/GasketModel01.png',
     fullDescription: 'High-performance oil sealing gaskets designed for maximum durability and reliability in demanding industrial applications. Our gaskets maintain optimal sealing properties even under extreme temperature and pressure conditions.',
@@ -27,7 +26,6 @@ export const products = [
   {
     id: 2,
     name: 'Water Sealing Gaskets',
-    category: 'Sealing Solutions',
     shortDescription: 'Corrosion-resistant gaskets for water and fluid systems',
     image: '/GasketModel02.png',
     fullDescription: 'Specially formulated water sealing gaskets with enhanced corrosion resistance. Perfect for applications involving water treatment systems, cooling systems, and fluid handling equipment.',
@@ -52,7 +50,6 @@ export const products = [
   {
     id: 3,
     name: 'Chemical Resistant Gaskets',
-    category: 'Chemical Solutions',
     shortDescription: 'High resistance gaskets for aggressive chemical environments',
     image: '/GasketModel03.png',
     fullDescription: 'Industrial-grade chemical resistant gaskets formulated to withstand exposure to aggressive chemicals, solvents, and corrosive substances without degradation.',
@@ -77,7 +74,6 @@ export const products = [
   {
     id: 4,
     name: 'Steam System Gaskets',
-    category: 'High Temperature',
     shortDescription: 'Ultra-high temperature gaskets for steam applications',
     image: '/GasketModel04.png',
     fullDescription: 'Purpose-designed gaskets for steam systems with superior thermal stability and pressure retention capabilities. Engineered to handle extreme temperature fluctuations.',
@@ -102,7 +98,6 @@ export const products = [
   {
     id: 5,
     name: 'Food Grade Gaskets',
-    category: 'Food & Beverage',
     shortDescription: 'FDA-approved gaskets for food and beverage processing',
     image: '/GasketModel05.png',
     fullDescription: 'Premium food-grade gaskets certified for direct contact with food products. Manufactured under strict hygiene standards with no harmful substances.',
@@ -127,7 +122,6 @@ export const products = [
   {
     id: 6,
     name: 'Custom Industrial Seals',
-    category: 'Custom Solutions',
     shortDescription: 'Bespoke gaskets tailored to specific industrial requirements',
     image: '/GasketModel06.png',
     fullDescription: 'Completely customizable gasket solutions designed to meet unique industrial specifications. Our engineering team works with you to develop the perfect seal.',
@@ -149,14 +143,6 @@ export const products = [
     price: 'Contact for quote',
     inStock: true
   }
-]
-
-export const categories = [
-  { id: 1, name: 'Sealing Solutions', icon: '🛡️', color: 'bg-blue-100' },
-  { id: 2, name: 'Chemical Solutions', icon: '⚗️', color: 'bg-purple-100' },
-  { id: 3, name: 'High Temperature', icon: '🔥', color: 'bg-red-100' },
-  { id: 4, name: 'Food & Beverage', icon: '🍜', color: 'bg-green-100' },
-  { id: 5, name: 'Custom Solutions', icon: '⚙️', color: 'bg-yellow-100' }
 ]
 
 export const whyChooseUs = [

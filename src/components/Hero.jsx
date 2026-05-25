@@ -61,12 +61,18 @@ const Hero = () => {
             Trusted by leading manufacturers worldwide for superior sealing performance and reliability
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/products" className="btn-primary inline-block">
+            <Link 
+              to="/products" 
+              className="btn-secondary inline-block hover:bg-accent-orange hover:text-white hover:border-2 hover:border-accent-orange transition-all duration-300"
+            >
               View Products
             </Link>
-            <button className="btn-secondary inline-block">
+            <Link 
+              to="/#contact" 
+              className="btn-secondary inline-block hover:bg-accent-orange hover:text-white hover:border-2 hover:border-accent-orange transition-all duration-300"
+            >
               Contact Us
-            </button>
+            </Link>
           </div>
         </motion.div>
       </div>

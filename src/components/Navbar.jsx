@@ -44,7 +44,7 @@ const Navbar = () => {
                 {item.label}
               </Link>
             ))}
-            <button className="btn-primary text-sm">Inquiry</button>
+            {/* <button className="btn-primary text-sm">Inquiry</button> */}
           </div>
 
           {/* Mobile Menu Button */}
@@ -75,7 +75,7 @@ const Navbar = () => {
                   {item.label}
                 </Link>
               ))}
-              <button className="w-full btn-primary">Inquiry</button>
+              {/* <button className="w-full btn-primary">Inquiry</button> */}
             </div>
           </motion.div>
         )}
