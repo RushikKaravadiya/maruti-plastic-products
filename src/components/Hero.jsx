@@ -1,26 +1,30 @@
-import { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
-import { motion } from 'framer-motion'
-import { ChevronLeft, ChevronRight } from 'lucide-react'
+import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const Hero = () => {
-  const [currentSlide, setCurrentSlide] = useState(0)
+  const [currentSlide, setCurrentSlide] = useState(0);
 
   const heroImages = [
-    '/GasketModel06.png',
-    '/slidelogo2.png',
-    '/GasketModel05.png',
-  ]
+    "/GasketModel01.png",
+    "/GasketModel02.png",
+    "/GasketModel03.png",
+  ];
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % heroImages.length)
-    }, 5000)
-    return () => clearInterval(timer)
-  }, [])
+      setCurrentSlide((prev) => (prev + 1) % heroImages.length);
+    }, 5000);
+    return () => clearInterval(timer);
+  }, []);
 
-  const nextSlide = () => setCurrentSlide((prev) => (prev + 1) % heroImages.length)
-  const prevSlide = () => setCurrentSlide((prev) => (prev - 1 + heroImages.length) % heroImages.length)
+  const nextSlide = () =>
+    setCurrentSlide((prev) => (prev + 1) % heroImages.length);
+  const prevSlide = () =>
+    setCurrentSlide(
+      (prev) => (prev - 1 + heroImages.length) % heroImages.length,
+    );
 
   return (
     <div className="relative h-[500px] sm:h-[600px] overflow-hidden">
@@ -54,24 +58,27 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
           className="text-center text-white px-4 sm:px-8 z-10"
         >
-       <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-4 leading-tight">
-        Premium Industrial <span className="text-accent-orange">Plastic Solutions</span>
-        </h1>
+          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-4 leading-tight">
+            Premium Industrial{" "}
+            <span style={{ color: "#366199" }}>Plastic Solutions</span>
+          </h1>
           <p className="text-lg sm:text-xl text-black-200 mb-8 max-w-2xl mx-auto">
-            Trusted by leading manufacturers worldwide for superior sealing performance and reliability
+            Trusted by leading manufacturers worldwide for superior sealing
+            performance and reliability
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link 
-              to="/products" 
-              className="btn-secondary inline-block hover:bg-accent-orange hover:text-white hover:border-2 hover:border-accent-orange transition-all duration-300"
+            <Link
+              to="/products"
+              className="px-8 py-4 bg-[#366199] text-white rounded-lg font-semibold shadow-lg hover:bg-[#0B1929] hover:scale-105 transition-all duration-300"
             >
               View Products
             </Link>
-            <Link 
-              to="/#contact" 
-              className="btn-secondary inline-block hover:bg-accent-orange hover:text-white hover:border-2 hover:border-accent-orange transition-all duration-300"
+
+            <Link
+              to="/#contact"
+              className="px-8 py-4 bg-[#366199] text-white rounded-lg font-semibold shadow-lg hover:bg-[#0B1929] hover:scale-105 transition-all duration-300"
             >
-              Contact Us
+              Contact us{" "}
             </Link>
           </div>
         </motion.div>
@@ -80,32 +87,33 @@ const Hero = () => {
       {/* Slider Controls */}
       <button
         onClick={prevSlide}
-        className="absolute left-4 top-1/2 -translate-y-1/2 z-20 bg-white/20 hover:bg-white/40 text-white p-2 rounded-full transition-all"
+        className="hidden sm:flex absolute left-4 top-1/2 -translate-y-1/2 z-20 bg-white/20 hover:bg-white/40 text-white p-2 rounded-full transition-all"
       >
         <ChevronLeft size={24} />
       </button>
 
       <button
         onClick={nextSlide}
-        className="absolute right-4 top-1/2 -translate-y-1/2 z-20 bg-white/20 hover:bg-white/40 text-white p-2 rounded-full transition-all"
+        className="hidden sm:flex absolute right-4 top-1/2 -translate-y-1/2 z-20 bg-white/20 hover:bg-white/40 text-white p-2 rounded-full transition-all"
       >
         <ChevronRight size={24} />
       </button>
 
       {/* Dots */}
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2 z-20">
+      <div className="hidden sm:flex absolute bottom-6 left-1/2 -translate-x-1/2 gap-2 z-20">
+        {" "}
         {heroImages.map((_, index) => (
           <button
             key={index}
             onClick={() => setCurrentSlide(index)}
             className={`w-2 h-2 rounded-full transition-all ${
-              index === currentSlide ? 'bg-accent-orange w-8' : 'bg-white/50'
+              index === currentSlide ? "bg-accent-orange w-8" : "bg-white/50"
             }`}
           />
         ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

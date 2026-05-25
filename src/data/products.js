@@ -1,33 +1,29 @@
 export const products = [
   {
     id: 1,
-    name: 'Oil Sealing Gaskets',
-    shortDescription: 'Premium oil resistance gaskets for industrial machinery',
-    image: '/GasketModel06.png',
-    fullDescription: 'High-performance oil sealing gaskets designed for maximum durability and reliability in demanding industrial applications. Our gaskets maintain optimal sealing properties even under extreme temperature and pressure conditions.',
+    name: 'Cabinet Profile Gasket',
+    shortDescription: 'PVC Cabinet Profile Gasket for secure glass fitting applications',
+    image: '/GasketModel01.png',
+    fullDescription: 'High-performance Cabinet Profile Gasket designed for secure glass fitting applications. Provides excellent UV resistance, long-lasting durability, and reliable sealing performance for extended use.',
     specifications: {
-      material: 'NBR, EPDM, FKM',
-      thickness: '1-5mm',
-      temperature: '-40°C to +120°C',
-      pressure: 'Up to 350 Bar',
-      sizes: 'Custom available'
+      material: 'PVC',
+      sizes: '4 mm, 5 mm, 6 mm',
+      UVResistance: 'Yes',
+      Color: 'Transparent / White / Custom',
+      Hardness: 'Hard and Soft'
     },
     applications: [
-      'Automotive engines',
-      'Hydraulic systems',
-      'Pump seals',
-      'Compressor units',
-      'Industrial machinery',
-      'Power generation equipment'
+      'Glass',
+      'Window frames',
+      'Aluminum profiles'
     ],
-    price: 'Contact for quote',
     inStock: true
   },
   {
     id: 2,
     name: 'Water Sealing Gaskets',
     shortDescription: 'Corrosion-resistant gaskets for water and fluid systems',
-    image: '/GasketModel05.png',
+    image: '/GasketModel02.png',
     fullDescription: 'Specially formulated water sealing gaskets with enhanced corrosion resistance. Perfect for applications involving water treatment systems, cooling systems, and fluid handling equipment.',
     specifications: {
       material: 'EPDM, PTFE, Silicone',
@@ -51,7 +47,7 @@ export const products = [
     id: 3,
     name: 'Chemical Resistant Gaskets',
     shortDescription: 'High resistance gaskets for aggressive chemical environments',
-    image: '/slidelogo2.png',
+    image: '/GasketModel03.png',
     fullDescription: 'Industrial-grade chemical resistant gaskets formulated to withstand exposure to aggressive chemicals, solvents, and corrosive substances without degradation.',
     specifications: {
       material: 'FKM, PTFE, Vitron',
@@ -91,54 +87,6 @@ export const products = [
       'Autoclave equipment',
       'Industrial sterilizers',
       'Heat recovery systems'
-    ],
-    price: 'Contact for quote',
-    inStock: true
-  },
-  {
-    id: 5,
-    name: 'Food Grade Gaskets',
-    shortDescription: 'FDA-approved gaskets for food and beverage processing',
-    image: '/GasketModel01.png',
-    fullDescription: 'Premium food-grade gaskets certified for direct contact with food products. Manufactured under strict hygiene standards with no harmful substances.',
-    specifications: {
-      material: 'Silicone, EPDM',
-      thickness: '1-4mm',
-      temperature: '-30°C to +150°C',
-      pressure: 'Up to 200 Bar',
-      sizes: 'Custom available'
-    },
-    applications: [
-      'Food processing equipment',
-      'Beverage production',
-      'Dairy equipment',
-      'Bottling lines',
-      'Storage tanks',
-      'Packaging machinery'
-    ],
-    price: 'Contact for quote',
-    inStock: true
-  },
-  {
-    id: 6,
-    name: 'Custom Industrial Seals',
-    shortDescription: 'Bespoke gaskets tailored to specific industrial requirements',
-    image: '/GasketModel02.png',
-    fullDescription: 'Completely customizable gasket solutions designed to meet unique industrial specifications. Our engineering team works with you to develop the perfect seal.',
-    specifications: {
-      material: 'Any compatible material',
-      thickness: 'Any required thickness',
-      temperature: 'Application specific',
-      pressure: 'Application specific',
-      sizes: 'Unlimited custom sizes'
-    },
-    applications: [
-      'Special machinery',
-      'Prototype development',
-      'Specialized industries',
-      'Research equipment',
-      'OEM applications',
-      'Emergency replacements'
     ],
     price: 'Contact for quote',
     inStock: true

@@ -9,7 +9,7 @@ export default {
       colors: {
         'dark-blue': '#0B1929',
         'light-gray': '#F5F7FA',
-        'accent-orange': '#2983f9',
+        'accent-orange': '#366199',
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],

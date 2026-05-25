@@ -29,8 +29,7 @@ const ProductDetail = () => {
       {/* Breadcrumb */}
       <div className="bg-light-gray py-2">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Link to="/products" className="flex items-center gap-2 text-accent-orange hover:text-accent-orange/80">
-            <ArrowLeft size={20} />
+<Link to="/products" onClick={() => window.scrollTo(0, 0)} className="flex items-center gap-2 text-accent-orange hover:text-accent-orange/80">            <ArrowLeft size={20} />
             Back to Products
           </Link>
         </div>
