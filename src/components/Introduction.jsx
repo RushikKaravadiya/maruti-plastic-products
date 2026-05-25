@@ -48,7 +48,7 @@ const Introduction = () => {
           {/* Image */}
           <motion.div variants={itemVariants} className="order-2 md:order-1">
             <img
-              src="/photo2.png"
+              src="/aboutImg.png"
               alt="Manufacturing"
               className="w-full rounded-lg shadow-elegant"
             />

@@ -7,9 +7,9 @@ const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0)
 
   const heroImages = [
-    '/slidelogo1.png',
+    '/GasketModel06.png',
     '/slidelogo2.png',
-    '/slidelogo3.png',
+    '/GasketModel05.png',
   ]
 
   useEffect(() => {
@@ -54,9 +54,9 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
           className="text-center text-white px-4 sm:px-8 z-10"
         >
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
-            Premium Industrial <span className="text-accent-orange">Plastic Solutions</span>
-          </h1>
+       <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-4 leading-tight">
+        Premium Industrial <span className="text-accent-orange">Plastic Solutions</span>
+        </h1>
           <p className="text-lg sm:text-xl text-black-200 mb-8 max-w-2xl mx-auto">
             Trusted by leading manufacturers worldwide for superior sealing performance and reliability
           </p>
