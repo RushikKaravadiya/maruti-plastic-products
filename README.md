@@ -143,7 +143,7 @@ colors: {
 ```
 
 ### Update WhatsApp Link
-Replace `91XXXXXXXXXX` with your actual WhatsApp number in:
+Replace `919714586233` with your actual WhatsApp number in:
 - `src/components/FloatingWhatsApp.jsx`
 - `src/components/ContactCTA.jsx`
 - `src/pages/ProductDetail.jsx`

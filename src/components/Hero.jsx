@@ -58,7 +58,10 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
           className="text-center text-white px-4 sm:px-8 z-10"
         >
-          <h1 className="text-3xl sm:text-6xl lg:text-7xl font-bold mb-0 leading-tight">
+          <h1 className="sm:hidden text-3xl font-bold mb-0 leading-tight">
+            Premium Industrial Plastic Solutions
+          </h1>
+          <h1 className="hidden sm:block sm:text-6xl lg:text-7xl font-bold mb-0 leading-tight">
             Premium Industrial{" "}
             <span style={{ color: "#366199" }}>Plastic Solutions</span>
           </h1>
@@ -66,12 +69,19 @@ const Hero = () => {
             Trusted by leading manufacturers worldwide for superior sealing
             performance and reliability
           </p>
-          <div className="flex justify-center mt-44 w-full md:hidden">
+          <div className="flex flex-col gap-3 justify-center mt-44 w-full">
             <Link
               to="/products"
-              className="px-8 py-4 bg-[#366199] text-white rounded-lg font-semibold shadow-lg hover:bg-[#0B1929] hover:scale-105 transition-all duration-300 w-64"
+              className="px-8 py-4 bg-[#366199] text-white rounded-lg font-semibold shadow-lg hover:bg-[#0B1929] hover:scale-105 transition-all duration-300 mx-auto w-64"
             >
               View Products
+            </Link>
+
+            <Link
+              to="/#contact"
+              className="px-8 py-4 bg-[#366199] text-white rounded-lg font-semibold shadow-lg hover:bg-[#0B1929] hover:scale-105 transition-all duration-300 mx-auto w-64"
+            >
+              Contact us{" "}
             </Link>
           </div>
         </motion.div>

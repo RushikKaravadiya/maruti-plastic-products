@@ -117,7 +117,7 @@ const ProductDetail = () => {
               {/* CTA Buttons */}
               <div className="space-y-3 mb-8">
                 <a
-                  href="https://wa.me/91XXXXXXXXXX?text=I%20am%20interested%20in%20your%20product%20-"
+                  href="https://wa.me/919714586233?text=I%20am%20interested%20in%20your%20product%20-"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full flex items-center justify-center gap-2 btn-secondary"
@@ -198,7 +198,7 @@ const ProductDetail = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             {/* <button className="btn-primary">Send Inquiry</button> */}
             <a
-              href="https://wa.me/91XXXXXXXXXX"
+              href="https://wa.me/919714586233"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-secondary"

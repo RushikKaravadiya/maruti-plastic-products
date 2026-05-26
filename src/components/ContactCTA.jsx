@@ -81,7 +81,7 @@ const ContactCTA = () => {
         >
           {/* <button className="btn-primary">Send Inquiry</button> */}
           <a
-            href="https://wa.me/91XXXXXXXXXX"
+            href="https://wa.me/919714586233"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-secondary"
