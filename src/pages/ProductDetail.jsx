@@ -1,22 +1,28 @@
-import { useParams, Link } from 'react-router-dom'
-import { motion } from 'framer-motion'
-import { products } from '../data/products'
+import { useParams, Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import { products } from "../data/products";
 // Imported PackageX here to handle out of stock status visuals
-import { ArrowLeft, Check, MessageCircle, PackageCheck, PackageX } from 'lucide-react' 
-import { useState, useEffect } from 'react'
+import {
+  ArrowLeft,
+  Check,
+  MessageCircle,
+  PackageCheck,
+  PackageX,
+} from "lucide-react";
+import { useState, useEffect } from "react";
 
 const ProductDetail = () => {
-  const { id } = useParams()
+  const { id } = useParams();
 
-  const product = products.find(p => p.id === parseInt(id))
+  const product = products.find((p) => p.id === parseInt(id));
 
-  const [selectedImage, setSelectedImage] = useState('')
+  const [selectedImage, setSelectedImage] = useState("");
 
   useEffect(() => {
     if (product?.images?.length > 0) {
-      setSelectedImage(product.images[0])
+      setSelectedImage(product.images[0]);
     }
-  }, [product])
+  }, [product]);
 
   if (!product) {
     return (
@@ -26,33 +32,30 @@ const ProductDetail = () => {
             Product Not Found
           </h1>
 
-          <Link
-            to="/products"
-            className="btn-primary inline-block"
-          >
+          <Link to="/products" className="btn-primary inline-block">
             Back to Products
           </Link>
         </div>
       </div>
-    )
+    );
   }
 
   const relatedProducts = products
-    .filter(p => p.id !== product.id)
-    .slice(0, 3)
+    .filter((p) => p.id !== product.id)
+    .slice(0, 3);
 
   return (
     <div>
-
       {/* Breadcrumb */}
       <div className="bg-light-gray py-2">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-end">
           <Link
             to="/products"
-            className="flex items-center gap-2 text-accent-orange hover:text-accent-orange/80"
+            className="flex items-center text-accent-orange hover:text-accent-orange/80 font-semibold transition-colors"
           >
+            {/* Keeping ArrowLeft inside the link container fixes the alignment */}
             <ArrowLeft size={20} />
-            Back to Products
+            <span>Back to Products</span>
           </Link>
         </div>
       </div>
@@ -60,9 +63,7 @@ const ProductDetail = () => {
       {/* Product Details */}
       <div className="section-padding">
         <div className="max-w-6xl mx-auto">
-
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-
             {/* LEFT SIDE IMAGES */}
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
@@ -70,7 +71,6 @@ const ProductDetail = () => {
               transition={{ duration: 0.6 }}
             >
               <div className="sticky top-24">
-
                 {/* BIG IMAGE */}
                 <div className="bg-light-gray rounded-2xl p-4 mb-4">
                   <img
@@ -82,7 +82,6 @@ const ProductDetail = () => {
 
                 {/* THUMBNAILS */}
                 <div className="flex gap-3 overflow-x-auto pb-2 scrollbar-thin scrollbar-thumb-accent-orange/50 scrollbar-track-light-gray">
-
                   {product.images.map((img, index) => (
                     <button
                       key={index}
@@ -97,8 +96,8 @@ const ProductDetail = () => {
                         transition-all
                         ${
                           selectedImage === img
-                            ? 'border-accent-orange'
-                            : 'border-gray-200'
+                            ? "border-accent-orange"
+                            : "border-gray-200"
                         }
                       `}
                     >
@@ -109,9 +108,7 @@ const ProductDetail = () => {
                       />
                     </button>
                   ))}
-
                 </div>
-
               </div>
             </motion.div>
 
@@ -121,7 +118,6 @@ const ProductDetail = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-
               <div className="mb-4">
                 <span className="text-accent-orange font-semibold">
                   {product.category}
@@ -162,20 +158,17 @@ const ProductDetail = () => {
                 </h3>
 
                 <div className="space-y-3">
-                  {Object.entries(product.specifications).map(([key, value]) => (
-                    <div
-                      key={key}
-                      className="flex justify-between gap-4"
-                    >
-                      <span className="text-gray-600 capitalize">
-                        {key}:
-                      </span>
+                  {Object.entries(product.specifications).map(
+                    ([key, value]) => (
+                      <div key={key} className="flex justify-between gap-4">
+                        <span className="text-gray-600 capitalize">{key}:</span>
 
-                      <span className="font-semibold text-dark-blue text-right">
-                        {value}
-                      </span>
-                    </div>
-                  ))}
+                        <span className="font-semibold text-dark-blue text-right">
+                          {value}
+                        </span>
+                      </div>
+                    ),
+                  )}
                 </div>
               </div>
 
@@ -189,9 +182,7 @@ const ProductDetail = () => {
                 <MessageCircle size={20} />
                 Chat on WhatsApp
               </a>
-
             </motion.div>
-
           </div>
 
           {/* Applications */}
@@ -207,23 +198,13 @@ const ProductDetail = () => {
             </h3>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-
               {product.applications.map((app, index) => (
-                <div
-                  key={index}
-                  className="flex items-center gap-3"
-                >
-                  <Check
-                    className="text-accent-orange"
-                    size={24}
-                  />
+                <div key={index} className="flex items-center gap-3">
+                  <Check className="text-accent-orange" size={24} />
 
-                  <span className="text-gray-600">
-                    {app}
-                  </span>
+                  <span className="text-gray-600">{app}</span>
                 </div>
               ))}
-
             </div>
           </motion.div>
 
@@ -235,20 +216,17 @@ const ProductDetail = () => {
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-
               <h3 className="text-2xl font-bold text-dark-blue mb-6">
                 Related Products
               </h3>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-
                 {relatedProducts.map((related) => (
                   <Link
                     key={related.id}
                     to={`/product/${related.id}`}
                     className="card-hover bg-white rounded-lg overflow-hidden shadow-elegant"
                   >
-
                     {/* Fixed image render array matching data model properties */}
                     <div className="h-48 overflow-hidden bg-gray-200">
                       <img
@@ -267,20 +245,15 @@ const ProductDetail = () => {
                         {related.shortDescription}
                       </p>
                     </div>
-
                   </Link>
                 ))}
-
               </div>
-
             </motion.div>
           )}
-
         </div>
       </div>
-
     </div>
-  )
-}
+  );
+};
 
-export default ProductDetail
+export default ProductDetail;

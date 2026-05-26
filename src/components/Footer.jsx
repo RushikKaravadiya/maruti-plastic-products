@@ -56,13 +56,13 @@ const Footer = () => {
                   />
                   <div className="flex flex-col gap-1">
                     <a
-                      href="tel:+919265202308"
+                      href="tel:+919714586233"
                       className="text-sm text-gray-300 hover:text-accent-orange transition-colors"
                     >
                       +91-97145 86233
                     </a>
                     <a
-                      href="tel:+919714586233"
+                      href="tel:+919265202308"
                       className="text-sm text-gray-300 hover:text-accent-orange transition-colors"
                     >
                       +91-92652 02308
@@ -115,29 +115,21 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
-                    className="text-gray-300 hover:text-accent-orange transition-colors text-sm"
-                  >
-                    About Us
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
+                  <Link
+                    to="/privacy-policy"
                     className="text-gray-300 hover:text-accent-orange transition-colors text-sm"
                   >
                     Privacy Policy
-                  </a>
+                  </Link>
                 </li>
-                <li>
-                  <a
-                    href="#"
-                    className="text-gray-300 hover:text-accent-orange transition-colors text-sm"
-                  >
-                    Terms of Service
-                  </a>
-                </li>
+               <li>
+                <Link
+                  to="/terms-of-service"
+                  className="text-gray-300 hover:text-accent-orange transition-colors text-sm"
+                >
+                  Terms of Service
+                </Link>
+              </li>
               </ul>
             </motion.div>
 
@@ -186,26 +178,19 @@ const Footer = () => {
                 © {currentYear} Maruti Plastic Products. All rights reserved.
               </p>
               <p className="mt-3 flex flex-wrap justify-center gap-4">
-                <a
-                  href="#"
+                <Link
+                  to="/privacy-policy"
                   className="hover:text-accent-orange transition-colors"
                 >
                   Privacy Policy
-                </a>
+                </Link>
                 <span className="text-gray-600">|</span>
-                <a
-                  href="#"
-                  className="hover:text-accent-orange transition-colors"
-                >
-                  Terms of Service
-                </a>
-                <span className="text-gray-600">|</span>
-                <a
-                  href="#"
-                  className="hover:text-accent-orange transition-colors"
-                >
-                  Sitemap
-                </a>
+             <Link
+                to="/terms-of-service"
+                className="hover:text-accent-orange transition-colors"
+              >
+                Terms of Service
+              </Link>
               </p>
             </div>
           </div>
