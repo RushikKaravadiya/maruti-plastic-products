@@ -6,8 +6,8 @@ export const products = [
     image: '/GasketModel01.png',
     fullDescription: 'High-performance Cabinet Profile Gasket designed for secure glass fitting applications. Provides excellent UV resistance, long-lasting durability, and reliable sealing performance for extended use.',
     specifications: {
-      material: 'PVC',
-      sizes: '4 mm, 5 mm, 6 mm',
+      Material: 'PVC',
+      Sizes: '4 mm, 5 mm, 6 mm',
       UVResistance: 'Yes',
       Color: 'Transparent / White / Custom',
       Hardness: 'Hard and Soft'
@@ -21,76 +21,79 @@ export const products = [
   },
   {
     id: 2,
-    name: 'Water Sealing Gaskets',
-    shortDescription: 'Corrosion-resistant gaskets for water and fluid systems',
+    name: 'Glass Joint Gasket Glue Strip',
+    shortDescription: 'High-quality PVC glass joint gasket glue strip for secure sealing and glass protection applications',
     image: '/GasketModel02.png',
-    fullDescription: 'Specially formulated water sealing gaskets with enhanced corrosion resistance. Perfect for applications involving water treatment systems, cooling systems, and fluid handling equipment.',
+    fullDescription: 'High-performance glass joint gasket glue strip designed for proper bounding and glass protection applications. Provides excellent adhesion, long-lasting durability, and reliable performance in various environmental conditions.',
     specifications: {
-      material: 'EPDM, PTFE, Silicone',
-      thickness: '1-6mm',
-      temperature: '-20°C to +100°C',
-      pressure: 'Up to 250 Bar',
-      sizes: 'Custom available'
+        Material: 'PVC',
+        Sizes: '10 mm, 12 mm & Custom',
+        UVResistance: 'Yes',
+        Waterproof: 'Yes',
+        Color: 'Transparent',
+        Hardness: 'Hard',
+        InstallationType: 'Glue Fit'
     },
     applications: [
-      'Water treatment plants',
-      'HVAC systems',
-      'Cooling towers',
-      'Heat exchangers',
-      'Irrigation systems',
-      'Marine applications'
+        'Glass partitions',
+        'Glass doors',
+        'Shower enclosures',
+        'Window glass joints',
+        'Furniture glass installation'
     ],
-    price: 'Contact for quote',
     inStock: true
   },
   {
-    id: 3,
-    name: 'Chemical Resistant Gaskets',
-    shortDescription: 'High resistance gaskets for aggressive chemical environments',
-    image: '/GasketModel03.png',
-    fullDescription: 'Industrial-grade chemical resistant gaskets formulated to withstand exposure to aggressive chemicals, solvents, and corrosive substances without degradation.',
-    specifications: {
-      material: 'FKM, PTFE, Vitron',
-      thickness: '1-5mm',
-      temperature: '-30°C to +200°C',
-      pressure: 'Up to 400 Bar',
-      sizes: 'Custom available'
-    },
-    applications: [
-      'Chemical processing',
-      'Pharmaceutical plants',
-      'Refineries',
-      'Petrochemical facilities',
-      'Waste treatment systems',
-      'Laboratory equipment'
-    ],
-    price: 'Contact for quote',
-    inStock: true
+  id: 3,
+  name: 'Aluminum Window Air Tight Gasket',
+  shortDescription: 'Premium-quality aluminum window air tight gasket for superior sealing and insulation applications',
+  image: '/GasketModel03.png',
+  fullDescription: 'High-performance Aluminum Window Air Tight Gasket specially designed for aluminum window systems to provide superior air sealing, waterproof protection, and noise insulation. Manufactured using flexible PVC and rubber material, this gasket ensures excellent durability, weather resistance, and long-lasting performance for residential, commercial, and industrial applications.',
+  specifications: {
+    Material: 'TPE & TPV(EPDM)',
+    Sizes: '4 mm, 6 mm, 8 mm & Custom',
+    UVResistance: 'Yes',
+    Waterproof: 'Yes',
+    AirTightSeal: 'Yes',
+    Color: 'Black-Green / Custom',
+    Hardness: 'Hard and Soft',
+    Flexibility: 'High',
+    InstallationType: 'Push Fit'
   },
+  applications: [
+    'Aluminum windows',
+    'Sliding window systems',
+    'Window frame sealing',
+    'Commercial buildings',
+    'Residential window installations'
+  ],
+  inStock: true
+},
   {
-    id: 4,
-    name: 'Steam System Gaskets',
-    shortDescription: 'Ultra-high temperature gaskets for steam applications',
-    image: '/GasketModel04.png',
-    fullDescription: 'Purpose-designed gaskets for steam systems with superior thermal stability and pressure retention capabilities. Engineered to handle extreme temperature fluctuations.',
-    specifications: {
-      material: 'PTFE, Asbestos-free',
-      thickness: '2-8mm',
-      temperature: 'Up to +300°C',
-      pressure: 'Up to 500 Bar',
-      sizes: 'Custom available'
-    },
-    applications: [
-      'Power plants',
-      'Boiler systems',
-      'Steam turbines',
-      'Autoclave equipment',
-      'Industrial sterilizers',
-      'Heat recovery systems'
-    ],
-    price: 'Contact for quote',
-    inStock: true
-  }
+  id: 4,
+  name: 'Edge Band Type Strip',
+  shortDescription: 'High-quality PVC edge band type strip for edge protection and decorative finishing applications',
+  image: '/GasketModel04.png',
+  fullDescription: 'Premium-grade Edge Band Type Strip designed for smooth edge finishing, surface protection, and decorative applications in furniture and panel systems. Manufactured using durable PVC material, this strip provides excellent flexibility, strong edge coverage, impact resistance, and long-lasting performance for residential and commercial use.',
+  specifications: {
+    Material: 'PVC',
+    Sizes: '8 mm, 10 mm, 12 mm & Custom',
+    Waterproof: 'Yes',
+    Color: 'Black / Grey / Custom',
+    Finish: 'Matte and Glossy',
+    Hardness: 'Semi-Hard',
+    Flexibility: 'High',
+    InstallationType: 'Glue Fit'
+  },
+  applications: [
+    'Furniture edge finishing',
+    'Cabinet edge protection',
+    'Office furniture',
+    'Modular furniture systems',
+    'Commercial edge banding'
+  ],
+  inStock: true
+}
 ]
 
 export const whyChooseUs = [

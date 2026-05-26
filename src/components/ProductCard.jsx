@@ -25,20 +25,9 @@ const ProductCard = ({ product, index }) => {
         <h3 className="text-xl font-bold text-dark-blue mb-2">
           {product.name}
         </h3>
-        <p className="text-gray-600 text-sm mb-4 line-clamp-2">
+        <p className="text-gray-600 text-sm mb-6 line-clamp-2">
           {product.shortDescription}
         </p>
-
-        {/* Features */}
-        <div className="mb-6">
-          <div className="flex flex-wrap gap-2">
-            {product.applications.slice(0, 2).map((app, idx) => (
-              <span key={idx} className="text-xs bg-light-gray text-dark-blue px-2 py-1 rounded">
-                {app}
-              </span>
-            ))}
-          </div>
-        </div>
 
         {/* CTA */}
         <Link
