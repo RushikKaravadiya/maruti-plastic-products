@@ -99,7 +99,7 @@ export const products = [
 export const whyChooseUs = [
   {
     title: 'Industry Experience',
-    description: '25+ years of excellence in gasket manufacturing and sealing solutions',
+    description: '17+ years of excellence in gasket manufacturing and sealing solutions',
     icon: 'Crown'
   },
   {
@@ -131,17 +131,17 @@ export const whyChooseUs = [
 
 export const testimonials = [
   {
-    company: 'AutoTech Industries',
+    company: 'Laranza Hardware',
     text: 'Exceptional quality and reliability. Their gaskets have consistently performed beyond expectations.',
     rating: 5
   },
   {
-    company: 'Global Manufacturing Ltd',
+    company: 'Udan Garuda Impex',
     text: 'Outstanding customer service and quick delivery. Highly recommended for industrial sealing solutions.',
-    rating: 5
+    rating: 4
   },
   {
-    company: 'Premium Oil Corporation',
+    company: 'Satyam Enterprises',
     text: 'Premium quality products with competitive pricing. Perfect partner for our manufacturing needs.',
     rating: 5
   }

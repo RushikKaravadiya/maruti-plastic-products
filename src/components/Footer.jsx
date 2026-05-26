@@ -36,7 +36,7 @@ const Footer = () => {
                 </span>
               </div>
               <p className="text-gray-300 text-sm mb-6 leading-relaxed">
-                Premium industrial Plastic solutions for over 25 years. Trusted
+                Premium industrial Plastic solutions for over 17 years. Trusted
                 by leading manufacturers worldwide.
               </p>
               <div className="space-y-3">
@@ -72,10 +72,10 @@ const Footer = () => {
                 <div className="flex items-center gap-3">
                   <Mail size={18} className="text-accent-orange shrink-0" />
                   <a
-                    href="mailto:info@marutiplastic.com"
+                    href="mailto:admin.marutiplastic@gmail.com"
                     className="text-sm text-gray-300 hover:text-accent-orange transition-colors"
                   >
-                    info@marutiplastic.com
+                    admin.marutiplastic@gmail.com
                   </a>
                 </div>
               </div>

@@ -60,7 +60,7 @@ const Introduction = () => {
               About <span className="text-accent-orange">Plastic Products</span>
             </h2>
             <p className="text-gray-600 text-lg mb-4">
-              With over 25 years of industry experience, Plastic Products has established itself as a leading manufacturer of premium industrial gaskets and sealing solutions. Our commitment to excellence and innovation drives us to deliver products that exceed international standards.
+              With over 17 years of industry experience, Plastic Products has established itself as a leading manufacturer of premium industrial gaskets and sealing solutions. Our commitment to excellence and innovation drives us to deliver products that exceed international standards.
             </p>
             <p className="text-gray-600 text-lg mb-6">
               We serve diverse industries including automotive, oil & gas, chemicals, pharmaceuticals, and food processing. Our state-of-the-art manufacturing facilities and skilled workforce ensure consistent quality in every product we deliver.
@@ -76,7 +76,7 @@ const Introduction = () => {
                 <div className="w-12 h-12 bg-accent-orange/20 rounded-lg flex items-center justify-center">
                   <span className="text-accent-orange text-xl">✓</span>
                 </div>
-                <span className="text-dark-blue font-semibold">25+ Years of Excellence</span>
+                <span className="text-dark-blue font-semibold">17+ Years of Excellence</span>
               </div>
               <div className="flex items-center space-x-3">
                 <div className="w-12 h-12 bg-accent-orange/20 rounded-lg flex items-center justify-center">

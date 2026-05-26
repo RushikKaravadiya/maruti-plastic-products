@@ -77,7 +77,7 @@ const Testimonials = () => {
         >
           <div className="inline-block bg-white rounded-lg p-6 shadow-elegant">
             <p className="text-gray-600 mb-2">Serving</p>
-            <div className="text-3xl font-bold text-accent-orange">500+</div>
+            <div className="text-3xl font-bold text-accent-orange">355+</div>
             <p className="text-gray-600">Satisfied Clients Worldwide</p>
           </div>
         </motion.div>

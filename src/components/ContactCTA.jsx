@@ -50,7 +50,7 @@ const ContactCTA = () => {
               <Mail size={40} className="text-accent-orange" />
             </div>
             <h3 className="font-bold text-lg mb-2">Email</h3>
-            <p className="text-gray-300">info@marutiplastic.com</p>
+            <p className="text-gray-300">admin.marutiplastic@gmail.com</p>
             <p className="text-gray-400 text-sm">Response within 24hrs</p>
           </motion.div>
 
