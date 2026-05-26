@@ -29,6 +29,7 @@ const Navbar = () => {
                 src="/logo.png" 
                 alt="Maruti Plastic Products"
                 className="h-40 w-auto object-contain"
+                style={{ marginLeft: '-25px' }}
               />
             </motion.div>
           </Link>
