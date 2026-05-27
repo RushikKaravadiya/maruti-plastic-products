@@ -17,13 +17,15 @@ const Footer = () => {
       {/* Main Footer */}
       <div className="section-padding">
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
-            {/* Company Info */}
+          {/* Layout Fix: Changed to 4-column system for perfectly even spacing across sections */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 xl:gap-12 mb-12">
+            {/* Company Info (Spans 2 columns on medium viewports to protect typography sizing) */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
+              className="sm:col-span-2 lg:col-span-2"
             >
               <div className="flex items-center space-x-3 mb-6">
                 <img
@@ -35,7 +37,7 @@ const Footer = () => {
                   Maruti Plastic Products
                 </span>
               </div>
-              <p className="text-gray-300 text-sm mb-6 leading-relaxed">
+              <p className="text-gray-300 text-sm mb-6 leading-relaxed max-w-sm">
                 Premium industrial Plastic solutions for over 17 years. Trusted
                 by leading manufacturers worldwide.
               </p>
@@ -81,7 +83,7 @@ const Footer = () => {
               </div>
             </motion.div>
 
-            {/* Quick Links */}
+            {/* Quick Links (Perfectly centered inside its own quadrant) */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -122,18 +124,18 @@ const Footer = () => {
                     Privacy Policy
                   </Link>
                 </li>
-               <li>
-                <Link
-                  to="/terms-of-service"
-                  className="text-gray-300 hover:text-accent-orange transition-colors text-sm"
-                >
-                  Terms of Service
-                </Link>
-              </li>
+                <li>
+                  <Link
+                    to="/terms-of-service"
+                    className="text-gray-300 hover:text-accent-orange transition-colors text-sm"
+                  >
+                    Terms of Service
+                  </Link>
+                </li>
               </ul>
             </motion.div>
 
-            {/* Social Media & Newsletter */}
+            {/* Social Media & Newsletter (Occupies the final equal segment) */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -141,7 +143,7 @@ const Footer = () => {
               viewport={{ once: true }}
             >
               <h4 className="font-bold text-lg mb-6">Follow Us</h4>
-              <p className="text-gray-300 text-sm mb-4">
+              <p className="text-gray-300 text-sm mb-4 leading-relaxed">
                 Connect with us on social media for latest updates and news
               </p>
               <div className="flex gap-3 mb-6">
@@ -169,7 +171,23 @@ const Footer = () => {
               </div>
             </motion.div>
           </div>
-
+          {/* Bottom Row: Full Width Map Section sits right below the columns */}
+          {/* <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            viewport={{ once: true }}
+            className="w-full h-64 md:h-80 rounded-xl overflow-hidden border border-white/10 mb-12 shadow-inner"
+          >
+            <iframe
+              title="Maruti Plastic Products Location Map"
+              src="https://maps.google.com/maps?q=22.785577326117767,70.79929839924627&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              className="w-full h-full border-0"
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </motion.div> */}
           {/* Divider */}
           <div className="border-t border-white/10 pt-8">
             {/* Copyright */}
@@ -185,12 +203,12 @@ const Footer = () => {
                   Privacy Policy
                 </Link>
                 <span className="text-gray-600">|</span>
-             <Link
-                to="/terms-of-service"
-                className="hover:text-accent-orange transition-colors"
-              >
-                Terms of Service
-              </Link>
+                <Link
+                  to="/terms-of-service"
+                  className="hover:text-accent-orange transition-colors"
+                >
+                  Terms of Service
+                </Link>
               </p>
             </div>
           </div>
