@@ -147,27 +147,31 @@ const Footer = () => {
                 Connect with us on social media for latest updates and news
               </p>
               <div className="flex gap-3 mb-6">
-                <a
-                  href="#"
-                  className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-accent-orange transition-colors"
-                  aria-label="Facebook"
-                >
-                  <Facebook size={18} />
-                </a>
-                <a
+                  <a
+                href="https://www.facebook.com/profile.php?id=61590489238190"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-accent-orange transition-colors"
+                aria-label="Facebook"
+              >
+                <Facebook size={18} />
+              </a>
+                {/* <a
                   href="#"
                   className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-accent-orange transition-colors"
                   aria-label="LinkedIn"
                 >
                   <Linkedin size={18} />
-                </a>
+                </a> */}
                 <a
-                  href="#"
-                  className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-accent-orange transition-colors"
-                  aria-label="Instagram"
-                >
-                  <Instagram size={18} />
-                </a>
+                href="https://www.instagram.com/maruti_plastic_products/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-accent-orange transition-colors"
+                aria-label="Instagram"
+              >
+                <Instagram size={18} />
+              </a>
               </div>
             </motion.div>
           </div>
