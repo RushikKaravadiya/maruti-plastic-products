@@ -5,6 +5,8 @@ const ContactCTA = () => {
   return (
     <section id="contact" className="section-padding bg-dark-blue text-white">
       <div className="max-w-6xl mx-auto">
+        
+        {/* Heading */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -15,6 +17,7 @@ const ContactCTA = () => {
           <h2 className="text-4xl sm:text-5xl font-bold mb-4">
             Ready to <span className="text-accent-orange">Get Started</span>?
           </h2>
+
           <p className="text-gray-300 text-lg max-w-2xl mx-auto">
             Reach out to us today for product inquiries, quotes, or technical support
           </p>
@@ -22,6 +25,7 @@ const ContactCTA = () => {
 
         {/* Contact Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+
           {/* Phone */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -33,9 +37,26 @@ const ContactCTA = () => {
             <div className="flex justify-center mb-4">
               <Phone size={40} className="text-accent-orange" />
             </div>
+
             <h3 className="font-bold text-lg mb-2">Phone</h3>
-            <p className="text-gray-300">+91-97145 86233 | +91-92652 02308</p>
-            <p className="text-gray-400 text-sm">Mon-Sun 9AM-9PM IST</p>
+
+            <a
+              href="tel:+919714586233"
+              className="block text-gray-300 hover:text-accent-orange transition-colors"
+            >
+              +91-97145 86233
+            </a>
+
+            <a
+              href="tel:+919265202308"
+              className="block text-gray-300 hover:text-accent-orange transition-colors"
+            >
+              +91-92652 02308
+            </a>
+
+            <p className="text-gray-400 text-sm mt-2">
+              Mon-Sun 9AM-9PM IST
+            </p>
           </motion.div>
 
           {/* Email */}
@@ -49,9 +70,19 @@ const ContactCTA = () => {
             <div className="flex justify-center mb-4">
               <Mail size={40} className="text-accent-orange" />
             </div>
+
             <h3 className="font-bold text-lg mb-2">Email</h3>
-            <p className="text-gray-300">admin.marutiplastic@gmail.com</p>
-            <p className="text-gray-400 text-sm">Response within 24hrs</p>
+
+            <a
+              href="mailto:admin.marutiplastic@gmail.com"
+              className="text-gray-300 hover:text-accent-orange transition-colors break-all"
+            >
+              admin.marutiplastic@gmail.com
+            </a>
+
+            <p className="text-gray-400 text-sm mt-2">
+              Response within 24hrs
+            </p>
           </motion.div>
 
           {/* Address */}
@@ -65,13 +96,20 @@ const ContactCTA = () => {
             <div className="flex justify-center mb-4">
               <MapPin size={40} className="text-accent-orange" />
             </div>
+
             <h3 className="font-bold text-lg mb-2">Address</h3>
-            <p className="text-gray-300 text-sm">Rajpar Road</p>
-            <p className="text-gray-400 text-sm">Morbi, India</p>
+
+            <p className="text-gray-300 text-sm">
+              Rajpar Road
+            </p>
+
+            <p className="text-gray-400 text-sm">
+              Morbi, India
+            </p>
           </motion.div>
         </div>
 
-        {/* CTA Buttons */}
+        {/* WhatsApp Button */}
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -79,16 +117,16 @@ const ContactCTA = () => {
           viewport={{ once: true }}
           className="flex flex-col sm:flex-row gap-4 justify-center"
         >
-          {/* <button className="btn-primary">Send Inquiry</button> */}
           <a
             href="https://wa.me/919714586233"
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-secondary"
+            className="btn-secondary flex justify-center items-center text-center w-full sm:w-auto"
           >
             Chat on WhatsApp
           </a>
         </motion.div>
+
       </div>
     </section>
   )
